@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeimagecell" rowHeight="341" id="vUe-oS-Wuc" customClass="HomeImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="341"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vUe-oS-Wuc" id="l1N-Ag-p4v">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="340.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85T-dB-zyQ" userLabel="title">
+                        <rect key="frame" x="20" y="11" width="422" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LzK-2u-wu9" userLabel="Img">
+                        <rect key="frame" x="22" y="34" width="418" height="252"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="252" id="fda-eJ-3uN"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGd-kD-cv1">
+                        <rect key="frame" x="20" y="294" width="422" height="42"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpk-xT-SpX" userLabel="收藏">
+                                <rect key="frame" x="8" y="2" width="32" height="32"/>
+                                <state key="normal" backgroundImage="gank_collect_default"/>
+                                <state key="selected" backgroundImage="gank_collected"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LT-LA-qVV" userLabel="日期">
+                                <rect key="frame" x="42" y="2" width="42" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="存到相册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojb-dP-9WP" userLabel="保存">
+                                <rect key="frame" x="342.5" y="2" width="69.5" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Bpk-xT-SpX" secondAttribute="bottom" id="AaJ-eM-zwF"/>
+                            <constraint firstItem="ojb-dP-9WP" firstAttribute="bottom" secondItem="mGd-kD-cv1" secondAttribute="bottomMargin" id="AeK-XC-KIl"/>
+                            <constraint firstItem="8LT-LA-qVV" firstAttribute="height" secondItem="Bpk-xT-SpX" secondAttribute="height" id="Bsh-oq-gex"/>
+                            <constraint firstItem="ojb-dP-9WP" firstAttribute="height" secondItem="Bpk-xT-SpX" secondAttribute="height" id="H3K-B9-IY6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ojb-dP-9WP" secondAttribute="trailing" constant="2" id="ZP3-QQ-6ro"/>
+                            <constraint firstItem="8LT-LA-qVV" firstAttribute="top" secondItem="Bpk-xT-SpX" secondAttribute="top" id="aVM-Tg-6Sl"/>
+                            <constraint firstItem="8LT-LA-qVV" firstAttribute="bottom" secondItem="mGd-kD-cv1" secondAttribute="bottomMargin" id="czZ-8E-7nk"/>
+                            <constraint firstItem="ojb-dP-9WP" firstAttribute="top" secondItem="Bpk-xT-SpX" secondAttribute="top" id="eKb-Xe-b4u"/>
+                            <constraint firstItem="ojb-dP-9WP" firstAttribute="bottom" secondItem="Bpk-xT-SpX" secondAttribute="bottom" id="nQG-R7-g1j"/>
+                            <constraint firstItem="8LT-LA-qVV" firstAttribute="leading" secondItem="Bpk-xT-SpX" secondAttribute="trailing" constant="2" id="nqG-NG-hxU"/>
+                            <constraint firstItem="8LT-LA-qVV" firstAttribute="leading" secondItem="Bpk-xT-SpX" secondAttribute="trailing" constant="2" id="q1o-Ca-JC5"/>
+                            <constraint firstItem="Bpk-xT-SpX" firstAttribute="leading" secondItem="mGd-kD-cv1" secondAttribute="leadingMargin" id="udk-nd-07U"/>
+                            <constraint firstItem="8LT-LA-qVV" firstAttribute="bottom" secondItem="Bpk-xT-SpX" secondAttribute="bottom" id="uxE-7K-VAu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LzK-2u-wu9" firstAttribute="leading" secondItem="l1N-Ag-p4v" secondAttribute="leadingMargin" constant="2" id="12x-Ug-1pY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="85T-dB-zyQ" secondAttribute="trailing" id="7UR-hA-J9Q"/>
+                    <constraint firstItem="LzK-2u-wu9" firstAttribute="top" secondItem="85T-dB-zyQ" secondAttribute="bottom" constant="2" id="7y8-2z-ttj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mGd-kD-cv1" secondAttribute="bottom" constant="-6" id="Den-qG-dxV"/>
+                    <constraint firstItem="85T-dB-zyQ" firstAttribute="leading" secondItem="l1N-Ag-p4v" secondAttribute="leadingMargin" id="OXA-FB-JFm"/>
+                    <constraint firstItem="85T-dB-zyQ" firstAttribute="top" secondItem="l1N-Ag-p4v" secondAttribute="topMargin" id="UZZ-Wb-X32"/>
+                    <constraint firstItem="mGd-kD-cv1" firstAttribute="top" secondItem="LzK-2u-wu9" secondAttribute="bottom" constant="8" id="ig6-KR-xHy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LzK-2u-wu9" secondAttribute="trailing" constant="2" id="kjE-lg-46O"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mGd-kD-cv1" secondAttribute="trailing" id="mXv-sX-c3J"/>
+                    <constraint firstItem="mGd-kD-cv1" firstAttribute="top" secondItem="LzK-2u-wu9" secondAttribute="bottom" constant="8" id="qQR-tm-Our"/>
+                    <constraint firstItem="LzK-2u-wu9" firstAttribute="top" secondItem="85T-dB-zyQ" secondAttribute="bottom" constant="2" id="sBg-JE-jLX"/>
+                    <constraint firstItem="mGd-kD-cv1" firstAttribute="leading" secondItem="l1N-Ag-p4v" secondAttribute="leadingMargin" id="vxz-B4-dlK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btncollect" destination="Bpk-xT-SpX" id="NBS-kz-BbX"/>
+                <outlet property="btnsave" destination="ojb-dP-9WP" id="yss-TT-gBg"/>
+                <outlet property="imgview" destination="LzK-2u-wu9" id="jAd-4f-Tpz"/>
+                <outlet property="labeltime" destination="8LT-LA-qVV" id="sw9-fm-Ne7"/>
+                <outlet property="title" destination="85T-dB-zyQ" id="tMh-of-1w4"/>
+            </connections>
+            <point key="canvasLocation" x="-117" y="39.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gank_collect_default" width="32" height="32"/>
+        <image name="gank_collected" width="32" height="32"/>
+    </resources>
+</document>
